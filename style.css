@@ -1,0 +1,176 @@
+.dragonback1 {
+  background-image: url('assets/dragons.PNG');
+  background-size: 42%;
+}
+.dragonback {
+  background-image: url("assets/logo.PNG");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom left; 
+  background-color: #454642;
+  background-size: 40%;
+}
+.goldText {
+	color:#AA9160;
+}
+.goldBack {
+	background-color:#AA9160;
+}
+.whiteText {
+	color:white;
+}
+body {
+  margin: 0;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+.break {
+	width:90%;
+	border-width:0px;
+	border-top: 3px solid #AA9160;
+} 
+.halfbreak {
+	width:50%;
+	border-width:0px;
+	border-top: 3px solid #AA9160;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #AA9160;
+}
+.topnavlogo {
+	width:60px;
+	height:52px;
+}
+.topnavleft {
+	float: left;
+}
+.topnav a {
+  
+  color: white;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #C5B358;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+.quote {
+	float: right;width: 60%;
+}
+h1 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 40px;
+}
+.main{
+	/*background-color: #454642; /* Standard syntax (must be last) */
+	height:80%;
+	width:70%;
+	margin:0 auto;
+	font-weight:normal;
+	font-style:normal;
+	color:white;
+	text-shadow: -0.3px -0.3px 0 #000, 0.3px -0.3px 0 #000, -0.3px 0.3px 0 #000, 0.3px 0.3px 0 #000;
+}
+.imageSquare {
+	width:120px;
+	height:120px;
+	border-radius: 50%;
+}
+.buttonF {
+	background-color:#2e2d2b;
+	color:white;
+	width:110px;
+	height:50px;
+	border-color: #AA9160;
+}
+.imageBack {
+	/*background-color: #2e2d2b;
+    #background: linear-gradient(to right, #2e2d2b 160px, transparent 30%);*/
+    width: 40%;
+    height: 100%;
+	margin-right: -50px; 
+}
+.contentSquare {
+	width:50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.commentBar {
+	width:400px;
+}
+/*
+.imageSquare:hover {
+	width:110px;
+	height:110px;
+}*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		
+		position: relative;
+		padding-left: 50%; 
+	}
+	.commentBar {
+		width:200px;
+	}
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	.main{
+		font-size:10px;
+	}
+	h1 {
+	  font-size: 10px;
+	}
+	.topnav a {
+  
+	  color: white;
+	  text-align: center;
+	  padding: 10px 10px;
+	  font-size: 10px;
+	  text-decoration: none;
+	  font-weight: bold;
+	}
+}
+.infoPin {
+	width:300px;
+	font-weight: bold;
+	text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+	margin-left: auto;
+	margin-right: auto;
+}
